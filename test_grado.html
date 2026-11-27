@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Configura tu experiencia de aprendizaje matemático en JAD Mathy.">
+    <title>JAD MATHY | Configuración inicial</title>
+
+    <link rel="stylesheet" href="estilos_registros.css">
+
+    <script src="configuracion.js" defer></script>
+</head>
+
+<body>
+
+    <main class="element-login-light">
+
+        <!-- PANEL IZQUIERDO -->
+        <aside class="brand-banner">
+
+            <div class="math-decorations" aria-hidden="true">
+                <span class="math-badge plus">+</span>
+                <span class="math-badge minus">×</span>
+                <span class="math-badge divide">÷</span>
+                <span class="math-badge multiply">−</span>
+                <span class="math-badge pi">π</span>
+            </div>
+
+            <section class="brand-content">
+
+                <img
+                    src="img/LOGO-MATHY-ORIGINAL_SINFONDO-.webp"
+                    alt="Logo de JAD Mathy"
+                    class="brand-logo"
+                >
+
+                <div>
+                    <h1 class="brand-title">
+                        ¡Tu aventura matemática te espera!
+                    </h1>
+
+                    <p class="brand-description">
+                        Completa estos rápidos pasos para que JAD
+                        el zorro cree el camino de aprendizaje
+                        perfecto para ti.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- INDICADOR DE PASOS -->
+            <ol class="test-steps">
+
+                <li class="test-step active" data-step="1">
+                    <span class="step-number">1</span>
+
+                    <div class="step-information">
+                        <h2>Grado de Estudio</h2>
+                        <p>Adaptamos los desafíos a tu nivel escolar.</p>
+                    </div>
+                </li>
+
+                <li class="test-step" data-step="2">
+                    <span class="step-number">2</span>
+
+                    <div class="step-information">
+                        <h2>Meta Diaria</h2>
+                        <p>Tú decides cuánto tiempo jugar al día.</p>
+                    </div>
+                </li>
+
+                <li class="test-step" data-step="3">
+                    <span class="step-number">3</span>
+
+                    <div class="step-information">
+                        <h2>Nivel Inicial</h2>
+                        <p>Elige una prueba de diagnóstico o empieza de cero.</p>
+                    </div>
+                </li>
+
+            </ol>
+
+        </aside>
+
+
+        <!-- PANEL DERECHO -->
+        <section class="login-container test-container">
+
+            <!-- ENCABEZADO -->
+            <header class="test-header">
+
+                <div class="test-brand">
+
+                    <img
+                        src="img/LOGO MATHY HORIZONTAL-SIN FONDO.webp"
+                        alt="Logo de JAD Mathy"
+                        class="test-logo"
+                    >
+
+                    <span>Mathy</span>
+
+                </div>
+
+                <nav class="test-progress"
+                    aria-label="Progreso de configuración">
+
+                    <span class="progress-indicator active"></span>
+                    <span class="progress-indicator"></span>
+                    <span class="progress-indicator"></span>
+
+                </nav>
+
+            </header>
+
+
+            <!-- FORMULARIO COMPLETO -->
+            <form id="configForm" class="login-form">
+
+                <section class="test-content">
+
+                    <!-- PASO 1: GRADO -->
+                    <div class="form-step active" data-panel="1">
+
+                        <div class="form-title-group">
+
+                            <h2 class="form-title">
+                                ¿En qué grado de estudio estás?
+                            </h2>
+
+                            <p class="form-subtitle">
+                                Adaptaremos los desafíos y temas de práctica
+                                a tu nivel escolar actual.
+                            </p>
+
+                        </div>
+
+                        <fieldset class="grade-options">
+
+                            <legend class="visually-hidden">
+                                Selecciona tu grado de estudio
+                            </legend>
+
+                            <label class="grade-option selected">
+
+                                <input
+                                    type="radio"
+                                    name="study-grade"
+                                    value="primaria"
+                                    checked
+                                    required
+                                >
+
+                                <span class="grade-letter">A</span>
+
+                                <span class="grade-information">
+                                    <strong>Primaria</strong>
+
+                                    <small>
+                                        Ideal para jóvenes de 8 a 11 años.
+                                        Conceptos básicos, juego guiado
+                                        y sumas divertidas.
+                                    </small>
+                                </span>
+
+                            </label>
+
+                            <label class="grade-option">
+
+                                <input
+                                    type="radio"
+                                    name="study-grade"
+                                    value="bachillerato"
+                                    required
+                                >
+
+                                <span class="grade-letter">B</span>
+
+                                <span class="grade-information">
+                                    <strong>Bachillerato</strong>
+
+                                    <small>
+                                        Para jóvenes de 12 a 15 años.
+                                        Desafíos lógicos, álgebra básica
+                                        y geometría espacial.
+                                    </small>
+                                </span>
+
+                            </label>
+
+                        </fieldset>
+
+                    </div>
+
+
+                    <!-- PASO 2: META DIARIA -->
+                    <div class="form-step" data-panel="2" hidden>
+
+                        <div class="form-title-group">
+
+                            <h2 class="form-title">
+                                ¿Cuánto tiempo quieres practicar?
+                            </h2>
+
+                            <p class="form-subtitle">
+                                Establece una meta diaria para mejorar
+                                tus habilidades matemáticas.
+                            </p>
+
+                        </div>
+
+                        <fieldset class="grade-options">
+
+                            <legend class="visually-hidden">
+                                Selecciona tu meta diaria
+                            </legend>
+
+                            <label class="grade-option selected">
+
+                                <input
+                                    type="radio"
+                                    name="daily-goal"
+                                    value="5"
+                                    checked
+                                    required
+                                >
+
+                                <span class="grade-letter">5</span>
+
+                                <span class="grade-information">
+                                    <strong>5 minutos</strong>
+                                    <small>Una práctica corta y divertida.</small>
+                                </span>
+
+                            </label>
+
+                            <label class="grade-option">
+
+                                <input
+                                    type="radio"
+                                    name="daily-goal"
+                                    value="10"
+                                    required
+                                >
+
+                                <span class="grade-letter">10</span>
+
+                                <span class="grade-information">
+                                    <strong>10 minutos</strong>
+                                    <small>Un poco más de práctica cada día.</small>
+                                </span>
+
+                            </label>
+
+                            <label class="grade-option">
+
+                                <input
+                                    type="radio"
+                                    name="daily-goal"
+                                    value="15"
+                                    required
+                                >
+
+                                <span class="grade-letter">15</span>
+
+                                <span class="grade-information">
+                                    <strong>15 minutos</strong>
+                                    <small>Ideal para reforzar tus conocimientos.</small>
+                                </span>
+
+                            </label>
+
+                            <label class="grade-option">
+
+                                <input
+                                    type="radio"
+                                    name="daily-goal"
+                                    value="20"
+                                    required
+                                >
+
+                                <span class="grade-letter">20</span>
+
+                                <span class="grade-information">
+                                    <strong>20 minutos</strong>
+                                    <small>Un reto para aprender mucho más.</small>
+                                </span>
+
+                            </label>
+
+                        </fieldset>
+
+                    </div>
+
+
+                    <!-- PASO 3: NIVEL INICIAL -->
+                    <div class="form-step" data-panel="3" hidden>
+
+                        <div class="form-title-group">
+
+                            <h2 class="form-title">
+                                ¿Cómo quieres comenzar?
+                            </h2>
+
+                            <p class="form-subtitle">
+                                Elige cómo deseas iniciar tu aventura
+                                de aprendizaje en Mathy.
+                            </p>
+
+                        </div>
+
+                        <fieldset class="grade-options">
+
+                            <legend class="visually-hidden">
+                                Selecciona tu nivel inicial
+                            </legend>
+
+                            <label class="grade-option selected">
+
+                                <input
+                                    type="radio"
+                                    name="initial-level"
+                                    value="diagnostico"
+                                    checked
+                                    required
+                                >
+
+                                <span class="grade-letter">A</span>
+
+                                <span class="grade-information">
+                                    <strong>Prueba de diagnóstico</strong>
+                                    <small>
+                                        Responde algunas preguntas para
+                                        identificar tus conocimientos
+                                        matemáticos.
+                                    </small>
+                                </span>
+
+                            </label>
+
+                            <label class="grade-option">
+
+                                <input
+                                    type="radio"
+                                    name="initial-level"
+                                    value="principiante"
+                                    required
+                                >
+
+                                <span class="grade-letter">B</span>
+
+                                <span class="grade-information">
+                                    <strong>Comenzar desde cero</strong>
+                                    <small>
+                                        Aprende desde los conceptos básicos
+                                        y avanza a tu propio ritmo.
+                                    </small>
+                                </span>
+
+                            </label>
+
+                        </fieldset>
+
+                    </div>
+
+                    <!-- MENSAJES -->
+                    <p id="formMessage"
+                        role="alert"
+                        aria-live="polite">
+                    </p>
+
+                </section>
+
+
+                <!-- BOTONES DE NAVEGACIÓN -->
+                <footer class="test-navigation">
+
+                    <button
+                        type="button"
+                        class="btn-back"
+                        id="btnBack"
+                        hidden
+                    >
+                        Atrás
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn-register"
+                        id="btnNext"
+                    >
+                        Siguiente
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="btn-register"
+                        id="btnFinish"
+                        hidden
+                    >
+                        Finalizar configuración
+                    </button>
+
+                </footer>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

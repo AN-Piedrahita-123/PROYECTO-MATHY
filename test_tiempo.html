@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Selecciona tu meta diaria de aprendizaje en JAD Mathy.">
+
+    <title>JAD MATHY | Meta Diaria</title>
+
+    <link rel="stylesheet" href="estilos_tiempo.css">
+
+    <script src="tiempo.js" defer></script>
+</head>
+
+<body>
+
+    <main class="element-login-light">
+
+        <!-- PANEL IZQUIERDO -->
+        <aside class="brand-banner">
+
+            <div class="math-decorations" aria-hidden="true">
+                <span class="math-badge plus">+</span>
+                <span class="math-badge minus">×</span>
+                <span class="math-badge divide">÷</span>
+                <span class="math-badge multiply">−</span>
+                <span class="math-badge pi">π</span>
+            </div>
+
+            <section class="brand-content">
+
+                <img
+                    src="img/LOGO-MATHY-ORIGINAL_SINFONDO-.webp"
+                    alt="Logo de JAD Mathy"
+                    class="brand-logo"
+                >
+
+                <div>
+                    <h1 class="brand-title">
+                        ¡Tu aventura matemática te espera!
+                    </h1>
+
+                    <p class="brand-description">
+                        Completa estos rápidos pasos para que
+                        el zorro cree el camino de aprendizaje
+                        perfecto para ti.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- PROGRESO -->
+            <ol class="test-steps">
+
+                <li class="test-step completed">
+                    <span class="step-number">✓</span>
+
+                    <div class="step-information">
+                        <h2>Grado de Estudio</h2>
+                        <p>Adaptamos los desafíos a tu nivel escolar.</p>
+                    </div>
+                </li>
+
+                <li class="test-step active" aria-current="step">
+                    <span class="step-number">2</span>
+
+                    <div class="step-information">
+                        <h2>Meta Diaria</h2>
+                        <p>Tú decides cuánto tiempo jugar al día.</p>
+                    </div>
+                </li>
+
+                <li class="test-step">
+                    <span class="step-number">3</span>
+
+                    <div class="step-information">
+                        <h2>Nivel Inicial</h2>
+                        <p>Elige una prueba de diagnóstico o empieza de cero.</p>
+                    </div>
+                </li>
+
+            </ol>
+
+        </aside>
+
+
+        <!-- PANEL DERECHO -->
+        <section class="login-container test-container">
+
+            <!-- ENCABEZADO -->
+            <header class="test-header">
+
+                <div class="test-brand">
+
+                    <img
+                        src="img/LOGO-MATHY-ORIGINAL_SINFONDO-.webp"
+                        alt="JAD"
+                        class="test-logo"
+                    >
+
+                    <span>Mathy</span>
+
+                </div>
+
+                <nav
+                    class="test-progress"
+                    aria-label="Progreso de configuración"
+                >
+                    <span class="progress-indicator completed"></span>
+                    <span class="progress-indicator active"></span>
+                    <span class="progress-indicator"></span>
+                </nav>
+
+            </header>
+
+
+            <!-- FORMULARIO -->
+            <form id="dailyForm" class="login-form">
+
+                <section class="test-content daily-content">
+
+                    <div class="form-title-group">
+
+                        <h2 class="form-title">
+                            ¿Qué tanto tiempo utilizarías la aplicación al día?
+                        </h2>
+
+                        <p class="form-subtitle">
+                            Establece tu meta diaria para que JAD te mantenga
+                            motivado sin sobrecargarte.
+                        </p>
+
+                    </div>
+
+
+                    <!-- OPCIONES -->
+                    <fieldset class="daily-options">
+
+                        <legend class="visually-hidden">
+                            Selecciona tu meta diaria
+                        </legend>
+
+
+                        <!-- 5 MINUTOS -->
+                        <label class="daily-option">
+
+                            <input
+                                type="radio"
+                                name="daily-goal"
+                                value="5"
+                                required
+                            >
+
+                            <span class="daily-radio"></span>
+
+                            <span class="daily-information">
+
+                                <strong>5 Minutos</strong>
+
+                                <small>
+                                    ¡Perfecto para un calentamiento rápido!
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <!-- 10 MINUTOS -->
+                        <label class="daily-option selected">
+
+                            <input
+                                type="radio"
+                                name="daily-goal"
+                                value="10"
+                                checked
+                                required
+                            >
+
+                            <span class="daily-radio"></span>
+
+                            <span class="daily-information">
+
+                                <span class="daily-title">
+
+                                    <strong>10 Minutos</strong>
+
+                                    <span class="recommended-tag">
+                                        Recomendado
+                                    </span>
+
+                                </span>
+
+                                <small>
+                                    Una meta equilibrada para practicar
+                                    constantemente.
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <!-- 15 MINUTOS -->
+                        <label class="daily-option">
+
+                            <input
+                                type="radio"
+                                name="daily-goal"
+                                value="15"
+                                required
+                            >
+
+                            <span class="daily-radio"></span>
+
+                            <span class="daily-information">
+
+                                <strong>15 Minutos</strong>
+
+                                <small>
+                                    Un excelente ritmo para superar
+                                    récords semanales.
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <!-- 20 MINUTOS -->
+                        <label class="daily-option">
+
+                            <input
+                                type="radio"
+                                name="daily-goal"
+                                value="20"
+                                required
+                            >
+
+                            <span class="daily-radio"></span>
+
+                            <span class="daily-information">
+
+                                <strong>20 Minutos</strong>
+
+                                <small>
+                                    ¡Desafíos completos para matemáticos
+                                    implacables!
+                                </small>
+
+                            </span>
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- MENSAJE -->
+                    <p
+                        id="dailyMessage"
+                        role="alert"
+                        aria-live="polite"
+                    ></p>
+
+                </section>
+
+
+                <!-- NAVEGACIÓN -->
+                <footer class="test-navigation">
+
+                    <button
+                        type="button"
+                        class="btn-back"
+                        id="btnBack"
+                    >
+                        Atrás
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="btn-start-experience"
+                        id="btnStart"
+                    >
+                        EMPEZAR EXPERIENCIA
+                    </button>
+
+                </footer>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
